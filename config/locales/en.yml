@@ -1,0 +1,7 @@
+en:
+  empty_string: "String cannot be empty!"
+  no_hint_message: "Sorry, no hints available!"
+  invalid_guess: "Wrong code! Please enter 4 numbers in range 1 to 6!"
+  wrong_difficulty: "Wrong difficulty! Please choose one of the following!"
+  wrong_entity: "Player code error!"
+  wrong_name: "Wrong name! Please enter the name which consists of 3 to 20 letters!"
