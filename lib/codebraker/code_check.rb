@@ -11,11 +11,11 @@ module Codebraker
       @answers = plus_count + minus_count
     end
 
+    private
+
     def zip_code
       @player_guess.zip(@code)
     end
-
-    private
 
     def exact_match_count
       zip_code.count { |player_digit, secret_digit| player_digit == secret_digit }
