@@ -8,12 +8,12 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Write a short summary, because RubyGems requires one.'
   spec.description   = 'Write a longer description or delete this line.'
-  spec.homepage      = 'https://github.com/streichholz-ame/codebraker'
+  spec.homepage      = 'https://github.com/streichholz-ame/rg-codebraker.git'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.7.0')
 
-  spec.metadata['allowed_push_host'] = "Set to 'https://github.com/streichholz-ame/ruby-codebraker'"
+  spec.metadata['allowed_push_host'] = "Set to 'https://github.com/streichholz-ame/rg-codebraker.git'"
 
-  spec.metadata['https://github.com/streichholz-ame/codebraker'] = spec.homepage
+  spec.metadata['https://github.com/streichholz-ame/rg-codebraker.git'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/streichholz-ame'
   spec.metadata['changelog_uri'] = 'https://github.com/streichholz-ame'
 
