@@ -29,7 +29,6 @@ module Codebraker
 
     def check_guess(guess)
       check_input(guess)
-      guess_validate!(guess)
       @attempts_used += 1
       answer = CodeCheck.new(secret_code, guess).check_numbers
       return { answer: answer, status: :win, code: @secret_code } if win?(answer)

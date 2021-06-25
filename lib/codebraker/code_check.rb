@@ -6,7 +6,6 @@ module Codebraker
     end
 
     def check_numbers
-      # binding.pry
       plus_count = Codebraker::Constants::EXACT_MATCH_SYMBOL * exact_match_count
       minus_count = Codebraker::Constants::MATCH_SYMBOL * match_count
       @answers = plus_count + minus_count
@@ -15,6 +14,8 @@ module Codebraker
     def zip_code
       @player_guess.zip(@code)
     end
+
+    private
 
     def exact_match_count
       zip_code.count { |player_digit, secret_digit| player_digit == secret_digit }
