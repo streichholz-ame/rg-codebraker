@@ -14,6 +14,3 @@ require_relative '../modules/errors/wrong_name_error'
 require_relative '../modules/validation'
 require_relative 'codebraker/code_check'
 require_relative 'codebraker/game'
-
-module Codebraker
-end
