@@ -17,8 +17,6 @@ module Codebraker
       @player_guess.zip(@code)
     end
 
-    private
-
     def exact_match_count
       zip_code.count { |player_digit, secret_digit| player_digit == secret_digit }
     end
