@@ -93,11 +93,5 @@ module Codebraker
         expect(game.check_guess(wrong_guess)[:status]).to eq(:lost)
       end
     end
-
-    describe '#to_h' do
-      it 'saves player name' do
-        expect(game.to_h[:name]).to eq(player)
-      end
-    end
   end
 end
