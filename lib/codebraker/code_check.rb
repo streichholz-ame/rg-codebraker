@@ -32,7 +32,7 @@ module Codebraker
         secret_code.delete_at(position) if position
       end
     end
-    
+
     def code_match
       proc { |player_digit, secret_digit| player_digit == secret_digit }
     end
