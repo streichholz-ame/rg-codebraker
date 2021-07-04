@@ -37,6 +37,18 @@ module Codebraker
       { answer: answer, status: :next }
     end
 
+    def to_h
+      {
+        name: @player_name,
+        difficulty: @difficulty,
+        attempts: @attempts_total,
+        attempts_left: @attempts_total - attempts_used,
+        hints: @hints_total,
+        hints_left: hints.size,
+        started_at: @time_start
+      }
+    end
+
     private
 
     def result(answer, status)
@@ -57,16 +69,5 @@ module Codebraker
       guess_validate!(player_code)
     end
 
-    def to_h
-      {
-        name: @player_name,
-        difficulty: @difficulty,
-        attempts: @attempts_total,
-        attempts_left: @attempts_total - attempts_used,
-        hints: @hints_total,
-        hints_left: hints.size,
-        started_at: @time_start
-      }
-    end
   end
 end
