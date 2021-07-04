@@ -68,6 +68,5 @@ module Codebraker
       check_presence!(player_code)
       guess_validate!(player_code)
     end
-
   end
 end
